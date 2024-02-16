@@ -9,7 +9,7 @@ import java.rmi.RemoteException;
 import java.util.List;
 
 public interface AccountService extends Remote {
-    public Transaction deposit(Account Account, Double amount) throws RemoteException;
+    public Transaction deposit(Account Account, Double amount) throws RemoteException; 
     public Transaction withdraw(Account Account, Double amount)  throws RemoteException;
     public Transaction transfer(Account fromAccount, Account toAccount, Double amount)  throws RemoteException;
 
